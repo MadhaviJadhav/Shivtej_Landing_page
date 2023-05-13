@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    min-width: 100%;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
+
+.container .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(35, 35, 35);
+    opacity: 0.8;
+    width: 100%;
+    padding: 2px;
+
+
+}
+
+.container .navbar .header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.container .navbar .header h1 {
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    padding-top: 14px;
+
+}
+
+.container .navbar .ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-self: center;
+    padding: 10px;
+    margin-left: 10px;
+
+}
+
+
+
+.container .navbar .ul li {
+
+    font-size: 15px;
+    padding: 10px 10px;
+    display: inline-block;
+    list-style: none;
+}
+
+.container .navbar .ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.container .navbar .ul li:hover {
+    background-color: green;
+}
+
+@media screen and  (max-width:1280px) {
+    body{
+        display: block;
+    }
+    
+
+}
+
+.footer {
+    background-color: black;
+}
+
+@media screen and  (max-width:630px) {
+    .container .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and  (max-width:340px) {
+    .container .navbar .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .navbar .header h1 {
+        padding-top: 0;
+    }
+
+
+}
+
+
+
+.container .content {
+    display: inline-block;
+    font-style: italic;
+    position: absolute;
+    right: 7%;
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    top: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .content p {
+    font-weight: bolder;
+}
+
+.container .content h1 {
+    color: orangered;
+    font-size: 90px;
+}
+
+.container .header h1:hover {
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.container .content h3 {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    color: orangered;
+    font-size: 30px;
+}
+
+.container .content button {
+    width: 100px;
+    padding: 5px;
+    background-color: rgb(235, 138, 47);
+    border: none;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.container .content button:hover {
+    background-color: rgb(247, 121, 3);
+}
+
+@media screen and  (max-width:1365px) {
+    .container .content {
+        display: block;
+        width: 60%;
+    }
+
+    .container .content p .h1 {
+        color: rgb(255, 117, 4);
+        display: block;
+    }
+
+}
+
+
+
+@media screen and  (max-width:800px) {
+    .container {
+        display: block;
+    }
+
+    .container .content {
+        display: block;
+    }
+
+    .container .content .header {
+        display: block;
+    }
+
+
+
+}
+
+@media screen and  (max-width:700px) {
+    .container .content {
+        width: 70%;
+        right: 0;
+    }
+
+}
+
+@media screen and  (max-width:560px) {
+    .container .content {
+        width: 100%;
+        right: 0;
+    }
+
+    .container .content .h1 {
+        font-size: 80px;
+    }
+
+}
+
+@media screen and  (max-width:350px) {
+    .container .content {
+        width: 100%;
+        right: 0;
+    }
+
+    .container .content .h1 {
+        font-size: 70px;
+    }
+
+    .container .content p {
+        display: block;
+    }
+
+}
+
+@media screen and  (max-width:300px) {
+    .container {
+        display: block;
+    }
+
+    .container .content {
+        display: block;
+    }
+
+    .container .content .header {
+        display: block;
+    }
+
+    .container .content {
+        width: 100%;
+        right: 0;
+    }
+
+    .container .content .h1 {
+        font-size: 68px;
+    }
+
+    .container .content p {
+        display: block;
+    }
+
+}
+
+@media screen and  (max-width:292px) {
+    .container {
+        display: block;
+    }
+
+    .container .content {
+        display: block;
+    }
+
+    .container .content .header {
+        display: block;
+    }
+
+    .container .content {
+        width: 100%;
+        right: 0;
+    }
+
+    .container .content .h1 {
+        font-size: 60px;
+    }
+
+    .container .content p {
+        display: block;
+    }
+
+}
+@media screen and  (max-height:320px) {
+    .container {
+        display: block;
+    }
+
+    .container .content {
+        display: block;
+    }
+
+    .container .content .header {
+        display: block;
+    }
+
+    .container .content {
+        width: 100%;
+        right: 0;
+    }
+
+    .container .content .h1 {
+        font-size: 60px;
+    }
+
+    .container .content p {
+        display: block;
+    }
+
+}
+@media screen and (max-width:260px) {
+    .container {
+        display: block;
+    }
+
+    .container .content {
+        display: block;
+    }
+
+    .container .content .header {
+        display: block;
+    }
+
+    .container .content {
+        width: 100%;
+        right: 0;
+    }
+
+    .container .content .h1 {
+        font-size: 45px;
+    }
+
+    .container .content p {
+        display: block;
+    }
+
+}
+
+@media screen and  (min-width:100px) {
+    body {
+        min-width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        /* min-width: 250px;
+        height: 800px; */
+        display: block;
+    }
+
+    .container .content {
+        color: white;
+    }
+}
+
+@media screen and  (max-width:238px) {
+    body {
+        display: block;
+        font-size: 14px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .container .content {
+        display: block;
+    }
+
+    .container .content .header {
+        display: block;
+    }
+
+    .container .content {
+        width: 100%;
+        right: 0;
+    }
+
+    .container .content .h1 {
+        font-size: 45px;
+    }
+
+    .container .content p {
+        display: block;
+    }
+
+}
+
+.footer {
+    background-color: black;
+    opacity: 0.7;
+    text-align: center;
+    padding: 1px;
+}
+
+.footer img {
+    padding-left: 10px;
+}
